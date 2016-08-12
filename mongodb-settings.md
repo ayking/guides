@@ -1,9 +1,12 @@
 
 #Show configuration
 
-```mongo
-```db.serverCmdLineOpts()
-
+```
+mongo
+db.serverCmdLineOpts()
+```
 or
 
-```/etc/mongod.conf
+```
+/etc/mongod.conf
+```
