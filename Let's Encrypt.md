@@ -11,7 +11,7 @@ Install letsencrypt
 npm install -g letsencrypt-cli@2.x
 ```
 
-Update nginx default config (redirect all http request to https but except the /.well-known/acme-challenge since Let's Encrypt will access this path when create/update certifications)
+Update nginx default config (redirect all http request to https except the path /.well-known/acme-challenge since Let's Encrypt will access this path when create/update certifications)
 
 ```sh
 sudo vim /etc/nginx/sites-available/default
