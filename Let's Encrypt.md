@@ -73,5 +73,5 @@ Last but not the least, certification create/renew only valid for 90 days so you
 
 ## Ref
 - https://letsencrypt.org/getting-started/
-- https://github.com/Daplie/letsencrypt-cli/blob/master/README.md
+- https://github.com/Daplie/letsencrypt-cli
 - https://letsencrypt.org/docs/rate-limits/
