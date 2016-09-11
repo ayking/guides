@@ -32,15 +32,25 @@ server {
 }
 ```
 
-Create script (ssl_www.sh) for create/update staging SSL certificates 
-```sh
-mkdir /tmp/letsencrypt-auto
-# This sample is SAN (subject alternativ name) for example.com and www.example.com
-./path/to/certbot-auto certonly --webroot -w /tmp/letsencrypt-auto -d example.com -d www.example.com
+```
 sudo service nginx reload
 ```
 
-Run the script you can find the SSL certification path on the `console output`. 
+Setup certbot-auto 
+
+```sh
+
+mkdir /tmp/letsencrypt-auto
+
+# This sample is SAN (subject alternativ name) for example.com and www.example.com
+./path/to/certbot-auto certonly --webroot -w /tmp/letsencrypt-auto -d example.com -d www.example.com
+
+# reload nginx
+sudo service nginx reload
+
+```
+
+You can find the SSL certification path on the `console output`. 
 
 Update nginx ssl certification settings (nginx use `fullchain.pem` and `privkey.pem`)
 ```
