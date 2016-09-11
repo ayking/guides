@@ -64,4 +64,8 @@ Highly recommend testing against staging environment before using production env
 
 Move to production environment need to remove `all fake certifications and keys` in the certification folder and update the server to `--server https://acme-v01.api.letsencrypt.org/directory` or remove `--server https://acme-staging.api.letsencrypt.org/directory`
 
+Last but not the least, certification create/renew only valid for 90 days so you need to add a corn job to update it regularly 
 
+```sh
+0 7,19 * * * sh /path/to/ssl_www.sh
+```
