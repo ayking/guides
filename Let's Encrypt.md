@@ -64,8 +64,14 @@ server {
 
 Last but not the least, certification create/renew only valid for 90 days so you need to add a cron job to update it regularly 
 
+Create renewal script (www_renew.sh)
+```
+/path/to/certbot-auto renew
+sudo service nginx reload
+```
+
 ```sh
-0 7,19 * * * sh ./path/to/certbot-auto renew
+0 7,19 * * * sh /path/to/www_renew.sh
 ```
 
 
