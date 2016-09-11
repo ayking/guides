@@ -1,14 +1,9 @@
-# Let's Encrypt for (AWS + nginx) - Free SSL/TLS Certificates
+# Let's Encrypt for (AWS + nginx + Ubuntu 14.04) - Free SSL/TLS Certificates
 
-Update node version 4.5.0
+Install certbot-auto
 ```sh
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-Install letsencrypt
-```sh
-npm install -g letsencrypt-cli@2.x
+wget https://dl.eff.org/certbot-auto
+chmod a+x certbot-auto
 ```
 
 Update nginx default config (redirect all http request to https except the path /.well-known/acme-challenge since Let's Encrypt will access this path when create/update certifications)
@@ -40,11 +35,8 @@ server {
 Create script (ssl_www.sh) for create/update staging SSL certificates 
 ```sh
 mkdir /tmp/letsencrypt-auto
-letsencrypt certonly \
-  --agree-tos --email admin@domain.com \
-  --webroot --webroot-path /tmp/letsencrypt-auto \
-  --domains www.domain.com,domain.com \
-  --server https://acme-staging.api.letsencrypt.org/directory 
+# This sample is SAN (subject alternativ name) for example.com and www.example.com
+./path/to/certbot-auto certonly --webroot -w /tmp/letsencrypt-auto -d example.com -d www.example.com
 sudo service nginx reload
 ```
 
@@ -54,24 +46,20 @@ Update nginx ssl certification settings (nginx use `fullchain.pem` and `privkey.
 ```
 server {
 	ssl on;
-	ssl_certificate path\to\sslcertification;
+	ssl_certificate path\to\ssl\certification;
 	ssl_certificate_key path\to\ssl\key;
 	ssl_protocols TLSv1.2;
 }
 ```
 
-Highly recommend testing against staging environment before using production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against `rate limits`.
-
-Move to production environment need to remove `all fake certifications and keys` in the certification folder and update the server to `--server https://acme-v01.api.letsencrypt.org/directory` or remove `--server https://acme-staging.api.letsencrypt.org/directory`
-
 Last but not the least, certification create/renew only valid for 90 days so you need to add a cron job to update it regularly 
 
 ```sh
-0 7,19 * * * sh /path/to/ssl_www.sh
+0 7,19 * * * sh ./path/to/certbot-auto renew
 ```
 
 
 ## Ref
 - https://letsencrypt.org/getting-started/
-- https://github.com/Daplie/letsencrypt-cli
 - https://letsencrypt.org/docs/rate-limits/
+- https://certbot.eff.org/#ubuntutrusty-nginx
