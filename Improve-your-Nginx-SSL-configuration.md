@@ -42,6 +42,7 @@ Nginx configuration:
 ssl_dhparam /etc/ssl/certs/dhparam.pem;
 ```
 
+# OCSP stapling
 ```
 add_header X-Frame-Options DENY;
 ```
