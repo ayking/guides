@@ -50,7 +50,7 @@ sudo service nginx reload
 
 Run the script you can find the SSL certification path on the `console output`. 
 
-Update nginx ssl certification settings
+Update nginx ssl certification settings (nginx use fullchain.pem)
 ```
 server {
 	ssl on;
