@@ -60,8 +60,8 @@ server {
 }
 ```
 
-We highly recommend testing against staging environment before using production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
+We highly recommend testing against staging environment before using production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against `rate limits`.
 
-Move to production environment please remove all `fake certifications and keys` in the certification folder and update the server to `--server https://acme-v01.api.letsencrypt.org/directory` or remove `--server https://acme-staging.api.letsencrypt.org/directory`
+Move to production environment need to remove `all fake certifications and keys` in the certification folder and update the server to `--server https://acme-v01.api.letsencrypt.org/directory` or remove `--server https://acme-staging.api.letsencrypt.org/directory`
 
 
