@@ -43,7 +43,7 @@ mkdir /tmp/letsencrypt-auto
 letsencrypt certonly \
   --agree-tos --email admin@domain.com \
   --webroot --webroot-path /tmp/letsencrypt-auto \
-  --domains www.domain.com \
+  --domains www.domain.com,domain.com \
   --server https://acme-staging.api.letsencrypt.org/directory 
 sudo service nginx reload
 ```
