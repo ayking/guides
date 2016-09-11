@@ -71,7 +71,7 @@ sudo service nginx reload
 ```
 
 ```sh
-0 7,19 * * * sh /path/to/www_renew.sh
+0 7,19 * * * sh /path/to/www_renew.sh >> path/to/log
 ```
 
 
