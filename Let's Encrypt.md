@@ -74,7 +74,7 @@ sudo service nginx reload
 0 7,19 * * * sh /path/to/www_renew.sh >> path/to/log
 ```
 
-``` Remark
+## Remark
 If we ran the staging config before then we need to do delete the following folder 
 ```
 /etc/letsencrypt/accounts/acme-staging.api.letsencrypt.org
