@@ -1,2 +1,5 @@
+# Ram disk
 
-```diskutil erasevolume HFS+ 'RAM' `hdiutil attach -nomount ram://8388608`
+```sh
+diskutil erasevolume HFS+ 'RAM' `hdiutil attach -nomount ram://8388608`
+```
