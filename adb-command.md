@@ -1,2 +1,2 @@
 ``` screencap
-adb shell screencap -p | sed 's/\r$//' > captured.png
+adb shell screencap -p > captured.png
