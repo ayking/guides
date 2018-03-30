@@ -107,3 +107,7 @@ BIT_OR        STDDEV
 COUNT         SUM  
 GROUP_CONCAT  VARIANCE  
 MIN  
+
+
+![Cheat Sheet1](assets/mysql_cheat_sheet1.png)
+
