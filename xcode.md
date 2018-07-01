@@ -3,6 +3,5 @@
 
 
 # Fix "IB Designables: Failed to render and update auto layout status for UIView (dkZ-fX-H5d): The agent crashed"
-
-Find IBDesignablesAgentCocoaTouch in ```~/Library/Logs/DiagnosticReports```
+Find ```IBDesignablesAgentCocoaTouch``` in ```~/Library/Logs/DiagnosticReports```
    
