@@ -1,12 +1,25 @@
 
 
 # Stop MySQL
-sudo service mysql stop
+`sudo service mysql stop`
+
 # Make MySQL service directory.
-sudo mkdir /var/run/mysqld
+`sudo mkdir /var/run/mysqld`
+
 # Give MySQL user permission to write to the service directory.
-sudo chown mysql: /var/run/mysqld
+`sudo chown mysql: /var/run/mysqld`
+
 # Start MySQL manually, without permission checks or networking.
-sudo mysqld_safe --skip-grant-tables --skip-networking &
+`sudo mysqld_safe --skip-grant-tables --skip-networking &`
+
 # Log in without a password.
-mysql -uroot mysql
+`mysql -uroot mysql`
+
+# Update the password for the root user.
+`UPDATE mysql.user SET authentication_string=PASSWORD('YOURNEWPASSWORD'), plugin='mysql_native_password' WHERE User='root' AND Host='%';
+EXIT;`
+
+# Turn off MySQL.
+`sudo mysqladmin -S /var/run/mysqld/mysqld.sock shutdown`
+# Start the MySQL service normally.
+`sudo service mysql start`
