@@ -1,6 +1,6 @@
 ### Optimization 
 
-Shadwow
+Shadow
  - Soft Shadow is expensive 
 
 Settings
