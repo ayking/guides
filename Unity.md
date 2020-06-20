@@ -10,6 +10,9 @@ Settings
  - Shadow cascades -> No cascades
  - VSync
 
+Object 
+ -  Static
+
 Texture 
  - Texture Mip
  - Max Size
