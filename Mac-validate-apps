@@ -1,3 +1,0 @@
-codesign --verify --verbose [path]
-
-spctl --assess -vv [path]
