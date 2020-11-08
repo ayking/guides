@@ -2,8 +2,8 @@
 ### Unity Init Assets
 - Asset store
   - Peek
-  - Easy Save 3
-  - SafeArea
+  - Easy Save
+  - Safe Area
   - DOTweenPro
   - Rest Client for Unity
 
@@ -18,4 +18,4 @@
 
 ### AI / Pathfinding 
   - A star Pathfinding Project
-  - Emerald AI (👍🏻)
+  - Emerald AI ( 👍🏻 )
