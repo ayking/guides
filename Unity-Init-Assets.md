@@ -6,6 +6,7 @@
   - Safe Area
   - DOTweenPro
   - Rest Client for Unity
+  - Odin
 
 - Unity Registry
   - ProGrids (Preview)
@@ -19,4 +20,3 @@
 
 ### AI / Pathfinding 
   - A star Pathfinding Project
-  - Emerald AI ( 👍🏻 )
