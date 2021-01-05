@@ -1,4 +1,4 @@
-# Debug Unity in VSCode
+# Debug Unity in VSCode (2019.4)
 
 ## Install 
 - VSCode extension **Debugger for Unity**
