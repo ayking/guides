@@ -8,5 +8,5 @@
 - Go Code -> Preferences (User).
 - Search "omnisharp".
 - Set "Omnisharp: Use Global Mono," to "always".
-- Set "Omnisharp: Path" -> "Edit in settings.json." add "omnisharp.path": "latest".
+- Set "Omnisharp: Path" -> "Edit in settings.json." add "omnisharp.path": "latest/1.37.7".
 - Restart VSCode.
