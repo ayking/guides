@@ -10,3 +10,5 @@
 
 ```Ctr``` ```J``` Combine objects
 
+```F``` Connect all vertexs
+
