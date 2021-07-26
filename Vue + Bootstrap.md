@@ -18,3 +18,43 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 ```
+
+Componment
+```
+<template>
+  <div>
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
+</template>
+
+<script>
+import { BButton, BContainer, BRow, BCol } from "bootstrap-vue";
+
+export default {
+  name: "HelloWorld",
+  created() {
+  },
+  components: {
+    BButton,
+    BContainer,
+    BRow,
+    BCol,
+  },
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    test() {
+    }
+  },
+};
+</script>
+
+```
