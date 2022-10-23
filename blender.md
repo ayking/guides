@@ -2,7 +2,7 @@
 
 ## Shortcuts 
 
-```Tab``` Edti model
+```Tab``` Edit model
 
 ```Shift``` ```B``` Zoom area
 
@@ -14,7 +14,6 @@
 
 ```N``` Show the sidebar to enter position, rotation and scale
 
-
 ## Rotate object with number
 ```r``` key => ```x/y/z``` key => number of degree
 
@@ -23,4 +22,3 @@
 
 ## Scale object with number
 ```s``` key => ```x/y/z``` key => number of degree
-
