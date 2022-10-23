@@ -12,6 +12,8 @@
 
 ```F``` Connect all vertexs
 
+```N``` Show the sidebar to enter position, rotation and scale
+
 
 ## Rotate object with number
 ```r``` key => ```x/y/z``` key => number of degree
